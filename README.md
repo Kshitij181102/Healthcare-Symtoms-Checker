@@ -48,15 +48,6 @@ curl http://localhost:3000/api/history
 - **Frontend**: HTML/CSS/JavaScript
 - **Deployment**: Vercel
 
-## 🚀 Deployment
-
-This project is ready for Vercel deployment. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
-
-**Quick Deploy:**
-1. Push to GitHub/GitLab
-2. Import to Vercel
-3. Add `GOOGLE_API_KEY` environment variable
-4. Deploy!
 
 ## Safety Notice
 
