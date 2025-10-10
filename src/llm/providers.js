@@ -12,7 +12,7 @@ class LLMProviders {
       throw new Error('Google API key not configured');
     }
 
-    if (process.env.GOOGLE_API_KEY === 'your_google_api_key_here') {
+    if (process.env.GOOGLE_API_KEY ) {
       return this.getMockResponse(symptoms);
     }
 
