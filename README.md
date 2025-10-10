@@ -6,14 +6,15 @@ A symptom checker application that uses Google Gemini 2.0 Flash AI to suggest po
 
 ## Quick Setup
 
-1. **Get Google API Key**
+1. **Get Google API Key** (Required)
    - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Create a new API key
+   - **Note**: A valid API key is required - the app will not work without it
 
 2. **Configure Environment**
    ```bash
    cp .env.example .env
-   # Edit .env and add your API key
+   # Edit .env and add your actual API key
    ```
 
 3. **Install & Run**

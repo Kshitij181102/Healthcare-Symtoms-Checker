@@ -129,11 +129,7 @@ class SymptomChecker {
                 <span><i class="fas fa-clock"></i> <strong>Time:</strong> ${new Date(data.timestamp).toLocaleString()}</span>
             </div>
 
-            ${data.demoMode ? `
-                <div style="margin-top: 1rem; padding: 1rem; background: linear-gradient(135deg, #e0f2fe, #b3e5fc); border-radius: var(--radius-lg); border-left: 4px solid #0288d1;">
-                    <p style="margin: 0; color: #01579b; font-weight: 500;"><i class="fas fa-info-circle"></i> Currently running in demo mode. Add your Google Gemini API key for real AI analysis.</p>
-                </div>
-            ` : ''}
+
 
             ${data.rawResponse ? `
                 <details style="margin-top: 1rem;">
@@ -227,7 +223,7 @@ class SymptomChecker {
     getSessionId() {
         let sessionId = localStorage.getItem('symptom-checker-session');
         if (!sessionId) {
-            sessionId = 'session-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+            sessionId = 'session-' + Date.now() + '-' + Math.random().toString(36).substring(2, 11);
             localStorage.setItem('symptom-checker-session', sessionId);
         }
         return sessionId;
