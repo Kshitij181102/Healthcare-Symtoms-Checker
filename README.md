@@ -3,7 +3,7 @@
 **⚠️ EDUCATIONAL PURPOSE ONLY - NOT FOR MEDICAL DIAGNOSIS**
 
 A symptom checker application that uses Google Gemini 2.0 Flash AI to suggest possible conditions and next steps based on user-reported symptoms.
-The Demo video link -https://drive.google.com/file/d/1PswlrShHgUyX8g87auT3HaxAcWbTcKTi/view?usp=sharing
+           The Demo video link -https://drive.google.com/file/d/1PswlrShHgUyX8g87auT3HaxAcWbTcKTi/view?usp=sharing
 ## Quick Setup
 
 1. **Get Google API Key** (Required)
