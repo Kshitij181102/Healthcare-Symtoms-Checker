@@ -62,7 +62,7 @@ router.get('/history', async (req, res) => {
 });
 
 router.get('/providers', (req, res) => {
-  const providers = process.env.GOOGLE_API_KEY ? ['gemini'] : [];
+  const providers = process.env.API_KEY ? ['gemini'] : [];
   res.json({ providers });
 });
 

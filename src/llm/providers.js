@@ -2,14 +2,14 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 class LLMProviders {
   constructor() {
-    this.gemini = process.env.GOOGLE_API_KEY ? new GoogleGenerativeAI(
-      process.env.GOOGLE_API_KEY
+    this.gemini = process.env.API_KEY ? new GoogleGenerativeAI(
+      process.env.API_KEY
     ) : null;
   }
 
   async analyzeSymptoms(symptoms) {
     if (!this.gemini) {
-      throw new Error('Google API key not configured. Please add your Google Gemini API key to the environment variables.');
+      throw new Error('API key not configured. Please add your Google Gemini API key to the environment variables.');
     }
 
     const prompt = this.buildPrompt(symptoms);

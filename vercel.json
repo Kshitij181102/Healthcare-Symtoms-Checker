@@ -17,6 +17,6 @@
     }
   ],
   "env": {
-    "GOOGLE_API_KEY": "@google_api_key"
+    "API_KEY": "@api_key"
   }
 }
